@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="assests/images/favicon.ico" />
+<title>Zoho | Interview Task</title>
+<meta name="description" content="Interview related Task" />
+<link rel="stylesheet" href="assests/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+</head>
+<body>
+
+  <nav class="nav">
+    <img id="logo" src="./assests/images/zoho-logo.png"/>
+    <ul><li><p>Hi User</p></li></ul>
+  </nav>
+
+  <div class="container">
+    <div class="wrapper">
+      <header>Select Language</header>
+      <div class="inputField">
+        <input type="search" placeholder="Search the Language" id="searchtextbox" />
+      </div>
+      <table class="langlist">
+        <!-- data are comes from local storage -->
+      </table>
+      <p class="searchEmpty" style="display: none;"><i class="fas fa-search"></i> No Results Found</p>
+      <div class="footer">
+        <span>You Have <span class="pendingTasks"></span> Language to choose</span>
+      </div>
+    </div>
+  
+    <div class="wrapper2">
+      <header>Selected List</header>
+      <div class="dropclass" ondrop="drops(event)" ondragover="allowDrop(event)">
+        <span><i class="far fa-clone"></i>  <p>Drag & Drop here</p></span>   
+      </div>
+      <table class="droplist ui-sortable-table">
+        <!-- data are comes from local storage -->
+      </table>
+    
+      <div class="footer2">
+        <span>You Know <span class="selectedTask"></span> Language</span>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="footer">
+      <p>© copyright 2021</p>
+    </div>
+    
+  </footer>
+<script src="assests/script.js"></script>
+</body>
+</html>
